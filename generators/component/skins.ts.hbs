@@ -1,0 +1,8 @@
+import styled, {css} from 'styled-components'
+import { {{ pascalCase name }}Props } from './{{ pascalCase name }}'
+
+type ComponentProps = {{ pascalCase name}}Props
+
+export const Component = styled.div<ComponentProps>`
+  ${({theme}) => css``}
+`

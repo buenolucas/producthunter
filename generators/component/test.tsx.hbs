@@ -1,0 +1,13 @@
+import { screen } from '@testing-library/react'
+import { renderWithTheme } from 'utilities/test/helpers'
+
+import {{pascalCase name}} from '.'
+
+const SKIN = '{{kebabCase name}}-skin'
+
+describe('<{{pascalCase name}} />', () => {
+  it('should render the component', () => {
+    renderWithTheme(<{{pascalCase name}} />)
+    expect(screen.getByTestId(SKIN))
+  })
+})

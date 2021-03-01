@@ -1,0 +1,13 @@
+import * as skins from './skins'
+
+export type {{pascalCase name}}Props = {
+  children?: React.ReactNode
+}
+
+const {{pascalCase name}} = ({ children }: {{pascalCase name}}Props) => (
+  <skins.Component data-testid="{{kebabCase name}}">
+    <div>{children}</div>
+  </skins.Component>
+)
+
+export default {{pascalCase name}}
