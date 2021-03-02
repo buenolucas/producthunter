@@ -1,23 +1,37 @@
 import { TypographyStyles } from './types'
 const colors = {
-  redBlood: '#EB5757',
-  groundAndBlood: '#6F4242',
+  thinBlood: '#EB5757',
+  groundAndBlood: '#784321',
+  bootGray: '#4F4F4F',
   white: '#FAFAFA'
 }
 
 const palette = {
-  primary: colors.redBlood,
-  secondary: colors.groundAndBlood,
-  mainBg: colors.redBlood
+  blood: {
+    main: colors.thinBlood,
+    on: colors.white
+  },
+  groundAndBlood: {
+    main: colors.groundAndBlood,
+    on: colors.white
+  },
+  bootSole: {
+    main: colors.bootGray,
+    on: colors.white
+  },
+  neutral: {
+    black: '#000000',
+    white: '#000000'
+  },
+  background: {
+    default: colors.thinBlood,
+    paper: colors.white
+  }
 }
 
 const grid = {
   container: '130em',
   gutter: '3.2rem'
-}
-
-const border = {
-  radius: '0.4rem'
 }
 
 const fonts = {
@@ -52,6 +66,13 @@ const fonts = {
   }
 }
 
+const shape = {
+  borderRadius: {
+    small: '0.4rem',
+    medium: '0.8rem',
+    large: '1.0rem'
+  }
+}
 const typography: TypographyStyles = {
   body: {
     family: `'${fonts.yrsa.family}', ${fonts.yrsa.type}`,
@@ -67,13 +88,44 @@ const typography: TypographyStyles = {
     lineHeight: '140%',
     smSize: '2.4rem',
     smLineHeight: '140%'
+  },
+
+  button: {
+    family: `'${fonts.smokum.family}', ${fonts.smokum.type}`,
+    weight: fonts.smokum.weights.normal,
+    size: '2.4rem',
+    smSize: '2.2rem',
+    lgSize: '3.4rem',
+    lineHeight: '140%'
   }
 }
 
+const spacing = {
+  xxxsmall: '0.4rem',
+  xxsmall: '0.8rem',
+  xsmall: '1.6rem',
+  small: '2.4rem',
+  medium: '3.2rem',
+  large: '4.0rem',
+  xlarge: '4.8rem',
+  xxlarge: '5.6rem'
+}
+
+const layers = {
+  base: 10,
+  menu: 20,
+  overlay: 30,
+  modal: 40,
+  alwaysOnTop: 50
+}
+
 export default {
+  colors,
   palette,
   grid,
-  border,
+  shape,
+  spacing,
   fonts,
+  layers,
   typography
 }

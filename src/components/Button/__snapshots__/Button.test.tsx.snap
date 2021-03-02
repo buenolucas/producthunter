@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> should render the size and bg for default 1`] = `
+.c0 {
+  font-family: 'Smokum',cursive;
+  font-weight: 400;
+  font-size: 2.4rem;
+  font-size: 2.4rem;
+  border-radius: 0.8rem;
+  padding: 0.8rem 1.6rem;
+  background-color: #784321;
+  border: none;
+  color: #FAFAFA;
+}
+
+.c0:hover {
+  background-color: #502d16;
+}
+
+.c0:active {
+  background-color: #140b05;
+}
+
+<button
+  class="c0"
+  color="groundAndBlood"
+  data-testid="button-skin"
+>
+  <span>
+    upshot
+  </span>
+</button>
+`
