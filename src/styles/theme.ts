@@ -25,7 +25,8 @@ const palette = {
   },
   background: {
     default: colors.thinBlood,
-    paper: colors.white
+    paper: colors.white,
+    negative: colors.bootGray
   }
 }
 
@@ -96,6 +97,15 @@ const typography: TypographyStyles = {
     size: '2.4rem',
     smSize: '2.2rem',
     lgSize: '3.4rem',
+    lineHeight: '140%'
+  },
+
+  menu: {
+    family: `'${fonts.smokum.family}', ${fonts.smokum.type}`,
+    weight: fonts.smokum.weights.normal,
+    size: '2.4rem',
+    smSize: '2.2rem',
+    lgSize: '3.2rem',
     lineHeight: '140%'
   }
 }
