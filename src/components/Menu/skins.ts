@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components'
-import media from 'styled-media-query'
 import { MenuProps } from './Menu'
 
 type ComponentProps = MenuProps
@@ -9,13 +8,12 @@ export const Component = styled.div<ComponentProps>`
   align-items: center;
   justify-content: space-between;
   position: relative;
+  height: 4.2rem;
 `
 export const Logo = styled.div`
-  ${media.lessThan('medium')`
-    position:absolute;
-    left:50%;
-    transform: translateX(-50%)
-  `}
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 `
 
 export const Icon = styled.div`
@@ -27,8 +25,10 @@ export const Icon = styled.div`
 export const MenuGroup = styled.div`
   ${({ theme }) => css`
     display: flex;
+
     flex-grow: 1;
     justify-content: flex-end;
+    align-items: center;
 
     > div {
       margin-left: ${theme.spacing.xsmall};
@@ -37,6 +37,7 @@ export const MenuGroup = styled.div`
 `
 
 export const MenuNav = styled.div``
+
 export const MenuLink = styled.a`
   ${({ theme }) => css`
     position: relative;
@@ -45,7 +46,7 @@ export const MenuLink = styled.a`
     margin: 0.3rem ${theme.spacing.small} 0;
     text-decoration: none;
     text-align: center;
-
+    color: ${theme.colors.white};
     &:hover {
       &::after {
         content: '';
