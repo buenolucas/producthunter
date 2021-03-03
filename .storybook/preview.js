@@ -14,3 +14,23 @@ export const decorators = [
     </ThemeProvider>
   )
 ]
+
+export const parameters = {
+  backgrounds: {
+    default: 'thinblood',
+    values: [
+      {
+        name: 'thinblood',
+        value: '#EB5757'
+      },
+      {
+        name: 'bootsole',
+        value: '#4F4F4F'
+      },
+      {
+        name: 'wantedposter',
+        value: '#FAFAFA'
+      }
+    ]
+  }
+}
