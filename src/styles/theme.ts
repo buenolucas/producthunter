@@ -44,6 +44,15 @@ const fonts = {
       bold: 700
     }
   },
+  bitter: {
+    family: 'Bitter',
+    type: 'serif',
+    weights: {
+      light: 100,
+      normal: 400,
+      bold: 900
+    }
+  },
   rye: {
     family: 'Rye',
     type: 'cursive',
